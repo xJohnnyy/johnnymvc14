@@ -10,7 +10,7 @@ const hbs = exphbs.create({ helpers: require("./utils/helpers") });
 const app = express();
 const PORT = process.env.PORT || 3306;
 const sess = {
-  secret: 'Super secret secret',
+  secret: '',
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -19,18 +19,14 @@ const sess = {
   }),
 };
 
-// Using session middleware with session object
 app.use(session(sess));
-// Parsing incoming JSON and URL-encoded data
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// IMPORTANT FOR PUBLIC FOLDERS - serving static files such as images from public directory
 app.use(express.static("public"));
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
-// Using session middleware again with a different session object
 app.use(
   session({
     secret: process.env.SECRET,
@@ -39,9 +35,7 @@ app.use(
     saveUninitialized: false,
   })
 );
-// Using routes from controller
 app.use(routes);
-// Syncing sequelize models with database and starting server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
 });
