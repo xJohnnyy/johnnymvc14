@@ -10,7 +10,6 @@ const Logout = async () => {
     alert('Failed to log out.'); 
   }
 };
-// Add an event listener to the logout button
 const LogoutButton = document.querySelector('#logout');
 if (LogoutButton) {
   LogoutButton.addEventListener('click', Logout);

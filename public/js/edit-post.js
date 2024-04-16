@@ -4,12 +4,12 @@ const post_id = window.location.toString().split("/")[
 ];
 
 
-const updateChessPostFormHandler = async (event) => {
+const updatePostFormHandler = async (event) => {
   event.preventDefault();
 
-  const title = document.querySelector("#title-update-chess-post").value.trim();
+  const title = document.querySelector("#title-update-post").value.trim();
   const content = document
-    .querySelector("#content-update-chess-post")
+    .querySelector("#content-update-post")
     .value.trim();
 
   if (title && content) {
@@ -28,7 +28,7 @@ const updateChessPostFormHandler = async (event) => {
 };
 
 
-const deleteChessPostFormHandler = async (event) => {
+const deletePostFormHandler = async (event) => {
   event.preventDefault();
 
   const response = await fetch(`/api/posts/${post_id}`, {
@@ -42,14 +42,14 @@ const deleteChessPostFormHandler = async (event) => {
   }
 };
 
-const updateChessPostButton = document.querySelector("#update-chess-post");
+const updatePostButton = document.querySelector("#update-post");
 
-if (updateChessPostButton) {
-  updateChessPostButton.addEventListener("click", updateChessPostFormHandler);
+if (updatePostButton) {
+  updatePostButton.addEventListener("click", updatePostFormHandler);
 }
 
-const deleteChessPostButton = document.querySelector("#delete-chess-post");
+const deletePostButton = document.querySelector("#delete-post");
 
-if (deleteChessPostButton) {
-  deleteChessPostButton.addEventListener("click", deleteChessPostFormHandler);
+if (deletePostButton) {
+  deletePostButton.addEventListener("click", deletePostFormHandler);
 }
