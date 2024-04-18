@@ -19,7 +19,12 @@ const sess = {
   }),
 };
 
-app.use(session(sess));
+app.use(session({
+  secret: 'Mysupersecret string',
+  resave: false,
+  saveUninitialized: false
+}
+));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
