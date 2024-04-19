@@ -53,8 +53,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 [Deployed Application Link:](link)
 
 ## GitHub Repository:
-[GitHub Repository:](link)
+[GitHub Repository:](https://github.com/xJohnnyy/johnnymvc14?tab=readme-ov-file)
 
-##  Walkthrough Video:
-[Click Here to Watch]()
+
+
 
