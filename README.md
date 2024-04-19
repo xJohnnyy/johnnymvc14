@@ -1,7 +1,7 @@
 # Model View Controller (MVC):  Blog
 
 ## Description.
-
+In this model we created a Blog website. The user cna create an account and begin making posts to add to their blog content. Each post has a title, the contents of the blog, and the date posted. 
 
 ## Assigned User Story:
 ```
