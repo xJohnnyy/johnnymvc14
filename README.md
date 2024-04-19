@@ -47,7 +47,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ```
 
 ## GIF:
-
+![](/public/images/Screen%20Recording%202024-04-18%20at%2010.35.41%20PM.gif)
 
 ## Deployed Application Link:
 [Deployed Application Link:](link)
