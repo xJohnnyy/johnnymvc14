@@ -50,7 +50,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ![](/public/images/Screen%20Recording%202024-04-18%20at%2010.35.41%20PM.gif)
 
 ## Deployed Application Link:
-[Deployed Application Link:](link)
+[Deployed Application Link:](https://mvcblog12321blog-f54644711851.herokuapp.com)
 
 ## GitHub Repository:
 [GitHub Repository:](https://github.com/xJohnnyy/johnnymvc14?tab=readme-ov-file)
